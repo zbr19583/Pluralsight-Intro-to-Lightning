@@ -1,0 +1,9 @@
+<aura:component >
+    <aura:attribute name="whom" type="String" default="World!" />
+    <h1 class="title">Hello {!v.whom}</h1>
+    <ul>
+    	<li>Option 1</li>
+        <li>Option 2</li>
+        <li>Option 3</li>
+    </ul>
+</aura:component>
