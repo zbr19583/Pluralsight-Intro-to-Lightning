@@ -1,6 +1,12 @@
 <aura:component >
     <aura:attribute name="whom" type="String" default="World!" />
     <h1 class="title">Hello {!v.whom}</h1>
+    <ui:inputSelect class="single" aura:id="InputSelectSingle" change="{!c.onSingleSelectChange}">
+                    
+                    <ui:inputSelectOption text="Mark"/>
+    				<ui:inputSelectOption text="Brian" value="true"/>
+    				<ui:inputSelectOption text="Eric"/>
+    </ui:inputSelect>
     <ul>
     	<li>Option 1</li>
         <li>Option 2</li>
